@@ -1,8 +1,9 @@
-
+#
+# Conditional build:
 %bcond_without  alsa            # without ALSA
-
-Summary:	irmix is an audio mixer for Lirc
-Summary(pl):	irmix jest mikserem audio dla Lirc
+#
+Summary:	irmix - an audio mixer for Lirc
+Summary(pl):	irmix - mikser d¼wiêku dla Lirca
 Name:		irmix
 Version:	0.1.4
 Release:	0.1
@@ -11,9 +12,9 @@ Group:		X11/Applications/Multimedia
 Source0:	http://www.blackfiveservices.co.uk/projects/%{name}-%{version}.tar.gz
 # Source0-md5:	4f1bf91bf3bd85698743875f3cf5788b
 URL:		http://www.blackfiveservices.co.uk/irmix.shtml
+BuildRequires:	XFree86-devel
 %{?with_alsa:BuildRequires:     alsa-lib-devel}
 BuildRequires:	lirc-devel
-BuildRequires:	XFree86-devel
 Requires:	lirc
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -23,16 +24,16 @@ of a TV's on-screen display, and handles making audio volumes
 controllable from an infra-red remote control.
 
 %description -l pl
-Irmix pozwala na kontrolê miksera audio przy pomocy zdalnej
-podczerwieni z pakietu Lirc, imituj±c dodatkowo znane z telewizorów
-wy¶wietlanie na ekranie tzw: OSD.
+Irmix pozwala na zdaln± kontrolê miksera d¼wiêku przy pomocy
+odbiornika podczerwieni obs³ugiwanego przez pakiet Lirc, imituj±c
+dodatkowo znane z telewizorów wy¶wietlanie na ekranie, tzw. OSD.
 
 %prep
 %setup -q
 
 %build
 %configure2_13 \
-%{!?with_alsa:--disable-alsa}
+	%{!?with_alsa:--disable-alsa}
 %{__make}
 
 %install
