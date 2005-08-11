@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without  alsa            # without ALSA
+%bcond_without	alsa            # without ALSA
 #
 Summary:	irmix - an audio mixer for Lirc
 Summary(pl):	irmix - mikser d¼wiêku dla Lirca
