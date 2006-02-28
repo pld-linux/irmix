@@ -8,7 +8,7 @@ Name:		irmix
 Version:	0.1.4
 Release:	0.1
 License:	GPL v2
-Group:		X11/Applications/Multimedia	
+Group:		X11/Applications/Multimedia
 Source0:	http://www.blackfiveservices.co.uk/projects/%{name}-%{version}.tar.gz
 # Source0-md5:	4f1bf91bf3bd85698743875f3cf5788b
 URL:		http://www.blackfiveservices.co.uk/irmix.shtml
