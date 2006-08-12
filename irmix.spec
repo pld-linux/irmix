@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	alsa            # without ALSA
+%bcond_without	alsa		# without ALSA
 #
 Summary:	irmix - an audio mixer for Lirc
 Summary(pl):	irmix - mikser d¼wiêku dla Lirca
@@ -13,7 +13,7 @@ Source0:	http://www.blackfiveservices.co.uk/projects/%{name}-%{version}.tar.gz
 # Source0-md5:	4f1bf91bf3bd85698743875f3cf5788b
 URL:		http://www.blackfiveservices.co.uk/irmix.shtml
 BuildRequires:	XFree86-devel
-%{?with_alsa:BuildRequires:     alsa-lib-devel}
+%{?with_alsa:BuildRequires:	alsa-lib-devel}
 BuildRequires:	lirc-devel
 Requires:	lirc
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
