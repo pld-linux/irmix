@@ -3,7 +3,7 @@
 %bcond_without	alsa		# without ALSA
 #
 Summary:	irmix - an audio mixer for Lirc
-Summary(pl):	irmix - mikser d¼wiêku dla Lirca
+Summary(pl.UTF-8):   irmix - mikser dÅºwiÄ™ku dla Lirca
 Name:		irmix
 Version:	0.1.4
 Release:	0.1
@@ -23,10 +23,10 @@ Irmix uses the Lirc infra-red receiver system to provide an imitation
 of a TV's on-screen display, and handles making audio volumes
 controllable from an infra-red remote control.
 
-%description -l pl
-Irmix pozwala na zdaln± kontrolê miksera d¼wiêku przy pomocy
-odbiornika podczerwieni obs³ugiwanego przez pakiet Lirc, imituj±c
-dodatkowo znane z telewizorów wy¶wietlanie na ekranie, tzw. OSD.
+%description -l pl.UTF-8
+Irmix pozwala na zdalnÄ… kontrolÄ™ miksera dÅºwiÄ™ku przy pomocy
+odbiornika podczerwieni obsÅ‚ugiwanego przez pakiet Lirc, imitujÄ…c
+dodatkowo znane z telewizorÃ³w wyÅ›wietlanie na ekranie, tzw. OSD.
 
 %prep
 %setup -q
