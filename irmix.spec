@@ -3,7 +3,7 @@
 %bcond_without	alsa		# without ALSA
 #
 Summary:	irmix - an audio mixer for Lirc
-Summary(pl.UTF-8):   irmix - mikser dźwięku dla Lirca
+Summary(pl.UTF-8):	irmix - mikser dźwięku dla Lirca
 Name:		irmix
 Version:	0.1.4
 Release:	0.1
